@@ -1,0 +1,71 @@
+<android.support.percent.PercentRelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:background="#fffffffe">
+	
+	<Button
+		android:background="#00000000"
+		android:id="@+id/make"
+		android:text="制作"
+		android:scaleType="centerCrop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+		app:layout_heightPercent="10%"
+		app:layout_widthPercent="30%"
+		app:layout_marginBottomPercent="1%"
+		
+
+	/>
+	<Button
+		android:background="#00000000"
+		android:id="@+id/cut"
+		android:text="裁剪"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+		app:layout_heightPercent="10%"
+		app:layout_widthPercent="30%"
+		app:layout_marginBottomPercent="1%"
+		
+		android:layout_toRightOf="@+id/make"
+	/>
+	<Button
+		android:background="#00000000"
+		android:id="@+id/zoom"
+		android:text="缩放"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+		app:layout_heightPercent="10%"
+		app:layout_widthPercent="30%"
+		app:layout_marginBottomPercent="1%"
+		android:layout_toRightOf="@+id/cut"
+	/>
+	<Button
+		android:background="#00000000"
+		android:id="@+id/compress"
+		android:text="压缩"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+		app:layout_heightPercent="10%"
+		app:layout_widthPercent="30%"
+		app:layout_marginBottomPercent="1%"
+
+		android:layout_toRightOf="@+id/zoom"
+	/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/make"
+		>
+    <ImageView
+		android:id="@+id/showimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+	/>
+	</LinearLayout>
+    
+</android.support.percent.PercentRelativeLayout>

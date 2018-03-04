@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.linroid.filtermenu:library-0.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-0.2.0.aar/9499cc4f49c4b4daf09732c411c02b2c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-0.2.0.aar/9499cc4f49c4b4daf09732c411c02b2c/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linroid.filtermenu/library/0.2.0/b0bd3d3e5c4b857afb9ebd132f27c169134ffc95/library-0.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

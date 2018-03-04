@@ -1,0 +1,98 @@
+<android.support.percent.PercentRelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:background="#fffffffe">
+	
+	<Button
+		android:background="#00000000"
+		android:id="@+id/grabcut_do"
+		android:text="抠图"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+		app:layout_heightPercent="10%"
+		app:layout_widthPercent="15%"
+		app:layout_marginBottomPercent="1%"
+	/>
+
+	<Button
+		android:background="#00000000"
+		android:id="@+id/paint"
+		android:text="颜色"
+		android:scaleType="centerCrop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+		app:layout_heightPercent="10%"
+		app:layout_widthPercent="15%"
+		app:layout_marginBottomPercent="1%"
+		android:layout_toRightOf="@+id/grabcut_do"
+
+	/>
+	<Button
+		android:background="#00000000"
+		android:id="@+id/alpha"
+		android:text="alpha"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+		app:layout_heightPercent="10%"
+		app:layout_widthPercent="15%"
+		app:layout_marginBottomPercent="1%"
+
+		android:layout_toRightOf="@+id/paint"
+	/>
+	<Button
+		android:background="#00000000"
+		android:id="@+id/pen"
+		android:text="大小:"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+		app:layout_heightPercent="10%"
+		app:layout_widthPercent="15%"
+		app:layout_marginBottomPercent="1%"
+		android:layout_toRightOf="@+id/alpha"
+
+	/>
+	<EditText
+		android:background="#00000000"
+		android:id="@+id/pen_big"
+		android:digits="1234567890"
+		android:maxLength="5" 
+		android:text="25"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+		app:layout_heightPercent="10%"
+		app:layout_widthPercent="10%"
+		app:layout_marginBottomPercent="1%"
+		android:layout_toRightOf="@+id/pen"
+
+	/>
+	<Button
+		android:background="#00000000"
+		android:id="@+id/grabcut_save"
+		android:text="保存"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+		app:layout_heightPercent="10%"
+		app:layout_widthPercent="15%"
+		app:layout_marginBottomPercent="1%"
+		android:layout_toRightOf="@+id/pen_big"
+
+	/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/grabcut_do"
+	>
+		<com.example.geniuben.myopencv.RectImageView
+			xmlns:custom="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/grabcut_image"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+		</com.example.geniuben.myopencv.RectImageView>
+	</LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>

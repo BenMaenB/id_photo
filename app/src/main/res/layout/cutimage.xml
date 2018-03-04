@@ -1,0 +1,57 @@
+<android.support.percent.PercentRelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	xmlns:app="http://schemas.android.com/apk/res-auto" 
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent" 
+	android:orientation="vertical" 
+	android:gravity="center" 
+	>
+	<Button 
+		android:background="#00000000" 
+		android:id="@+id/guding" 
+		android:text="固定裁剪" 
+		android:scaleType="centerCrop" 
+		android:layout_width="0dp" 
+		android:layout_height="0dp" 
+		app:layout_heightPercent="10%" 
+		app:layout_widthPercent="25%" 
+		app:layout_marginBottomPercent="1%"/>
+	<Button android:background="#00000000" 
+		android:id="@+id/bili" 
+		android:text="比例裁剪" 
+		android:layout_width="0dp" 
+		android:layout_height="0dp" 
+		app:layout_heightPercent="10%" 
+		app:layout_widthPercent="25%" 
+		app:layout_marginBottomPercent="1%" android:layout_toRightOf="@+id/guding"/>
+	<Button android:background="#00000000" 
+		android:id="@+id/free" 
+		android:text="自由裁剪" 
+		android:layout_width="0dp" 
+		android:layout_height="0dp" 
+		app:layout_heightPercent="10%" 
+		app:layout_widthPercent="25%" 
+		app:layout_marginBottomPercent="1%" 
+		android:layout_toRightOf="@+id/bili"/>
+	<Button 
+		android:background="#00000000" 
+		android:id="@+id/cut_save" 
+		android:text="保存" 
+		android:layout_width="0dp" 
+		android:layout_height="0dp" 
+		app:layout_heightPercent="10%" 
+		app:layout_widthPercent="25%" 
+		app:layout_marginBottomPercent="1%" 
+		android:layout_toRightOf="@+id/free"/>
+	<LinearLayout 
+		android:layout_width="match_parent" 
+		android:layout_height="match_parent" 
+		android:layout_below="@+id/guding">
+		<com.theartofdev.edmodo.cropper.CropImageView 
+			xmlns:custom="http://schemas.android.com/apk/res-auto" 
+			android:id="@+id/cropImageView" 
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent">
+			</com.theartofdev.edmodo.cropper.CropImageView>
+	</LinearLayout>
+</android.support.percent.PercentRelativeLayout>

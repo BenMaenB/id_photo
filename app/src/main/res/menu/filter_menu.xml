@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/make"
+            android:icon="@drawable/fix"
+            android:title="制作" />
+        <item
+            android:id="@+id/cut"
+            android:icon="@drawable/cut"
+            android:title="裁剪" />
+        <item
+            android:id="@+id/zoom"
+            android:icon="@drawable/app_icon"
+            android:title="缩放" />
+    </group>
+</menu>
